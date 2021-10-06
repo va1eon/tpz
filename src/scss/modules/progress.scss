@@ -84,6 +84,7 @@
       &::before {
         width: 67px;
         height: 67px;
+        z-index: 2;
       }
 
       &::after {
@@ -93,13 +94,11 @@
 
       & > span {   
         position: absolute;
-        top: -2px;
+        top: 0;
         right: -28px;
-        z-index: 2;
-        transform: rotate(55deg);
-        width: 26px;
-        height: 9px;
-        border-radius: 10px;
+        z-index: 1;
+        width: 18px;
+        height: 18px;
       }
     }
 
@@ -179,6 +178,19 @@
       & .progress__item-mask,
       & .progress__item-num > span {
         background-color: #ED867A;
+      }
+    }
+
+    &-content {
+      padding-right: 20px;
+      font-family: 'Mulish', sans-serif;
+      font-size: 18px;
+      line-height: 1.4;
+      font-weight: 300;
+      color: #060606;
+
+      &-bold {
+        font-weight: 700;
       }
     }
   }
