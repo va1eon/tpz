@@ -1,0 +1,198 @@
+.header {
+  margin-bottom: 89px;
+  padding-top: 30px;
+  padding-bottom: 75px;
+  background-image: linear-gradient(rgba(50, 11, 97, 0.8)), url('../img/header/header-bg.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 35px;
+    
+    &-logo {
+      display: block;
+      width: 68px;
+      height: auto;
+    }
+
+    &-text {
+      max-width: 837px;
+      font-size: 18px;
+      line-height: 1.4;
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+
+  &__content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: url('../img/header/header-bg-el-1.svg') bottom 30% left,
+                url('../img/header/header-bg-el-2.svg') bottom right;
+    background-repeat: no-repeat;
+    
+    &-title {
+      margin-bottom: 50px;
+      font-size: 50px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+  
+      &-yellow {
+        color: #FCE558;
+      }
+  
+      &::after {
+        content: "";
+        position: relative;
+        bottom: -20px;
+        display: block;
+        margin: 0 auto;
+        width: 85px;
+        height: 2px;
+        background-color: #FAD264;
+      }
+    }
+  
+    &-subtitle {
+      margin: 0 auto 40px;
+      max-width: 730px;
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 400;
+  
+      &-upper {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 0 auto 40px;
+      max-width: 920px;
+    }
+
+    &-item {
+      display: block;
+      width: calc((100% / 3) - (60px / 3));
+    }
+
+    &-submit {
+      position: relative;
+      display: block;
+      padding: 20px 15px;
+      width: 100%;
+      height: 100%;
+      background-color: #D3CEDC;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #000;
+
+      transition: background-color .15s linear, box-shadow .15s linear;
+
+      &:hover {
+        background-color: #fff;
+        box-shadow: none;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        z-index: 1;
+        transform: translate3d(-50%, 25%, 0);
+
+        width: 44px;
+        height: 44px;
+        background: #FAD264 url('../img/header/star.svg') no-repeat center;
+        border-radius: 50%;
+        pointer-events: none;
+      }
+    }
+
+    &-date {
+      margin: 0 auto 50px;
+      padding-top:3px;
+      height: 30px;
+      max-width: 636px;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #fff;
+      background: url('../img/header/calendare.svg') no-repeat center left;
+
+      &-yellow {
+        margin-left: 30px;
+        color: #FCE559;
+      }
+    }
+
+    &-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 30px;
+      margin-bottom: 20px;
+    }
+
+    &-agree {
+      margin-bottom: 38px;
+      font-size: 14px;
+      line-height: 1.2;
+      font-weight: 400;
+      color: #fff;
+    }
+
+    &-test {
+      margin: 0 auto;
+      padding-top: 6px;
+      padding-left: 60px;
+      max-width: 540px;
+      height: 54px;
+      background: url('../img/header/test.svg')no-repeat center left;
+
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+
+    
+    padding-top: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: #E130E3;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    fill: #fff;
+
+    &-icon {
+      width: 24px;
+      height: 35px;
+    }
+  }
+}

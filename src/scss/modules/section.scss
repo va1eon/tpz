@@ -1,0 +1,48 @@
+.section {
+  margin-bottom: 90px;
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #320B61;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+
+    &::after {
+      content: "";
+      position: relative;
+      bottom: -40px;
+      display: block;
+      margin: 0 auto;
+      width: 70px;
+      height: 2px;
+      background-color: #E130E3;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 60px;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+
+    &-upper {
+      text-transform: uppercase;
+    }
+  }
+
+  
+  &--gray {
+    margin-top: -90px;
+    padding-top: 90px;
+    background-color: #F7F7F7;
+  }
+
+  &--graph {
+    background: url('../img/section-bg-element.svg') no-repeat top right 10%;
+  }
+}

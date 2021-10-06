@@ -1,0 +1,119 @@
+.marathon-set {
+  background-color: #42196D;
+  padding: 90px 0;
+
+  & .section__title {
+    color: #FAD264;
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+  }
+
+  &__item {
+    width: calc((100% / 3) - (30px / 3));
+    text-align: center;
+
+    &-card {
+      position: relative;
+      margin-bottom: 25px;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 47px;
+        height: 30px;
+        background: url('../img/marathon-set/marathon-set-arr.svg') no-repeat center;
+      }
+    }
+
+    &-header {
+      position: relative;
+      overflow: hidden;
+      height: 238px;
+    }
+
+    &-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+
+      transform: translate3d(-50%, -50%, 0);
+      &:not(.height) {
+        max-width: 100%;
+      }
+    }
+
+    &-content {
+      padding: 30px 5px;
+      min-height: 250px;
+      border-bottom-right-radius: 40px;
+      border-bottom-left-radius: 40px;
+      background-color: #fff;
+      color: #292841;
+    }
+
+    &-title {
+      margin-bottom: 10px;
+      min-height: 90px;
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 400;
+
+      &--light {
+        margin-bottom: 15px;
+        min-height: 63px;
+        color: #fff;
+      }
+    }
+
+    &-list {
+      list-style-type: none;
+      padding: 0 0 0 45px;
+      margin: 0;
+    }
+
+    &-element {
+      position: relative;      
+      font-size: 18px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-align: left;
+      color: #fff;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: -45px;
+
+        width: 31px;
+        height: 30px;
+        background: url('../img/marathon-set/marathon-set-check.svg') no-repeat center;
+      }
+    }
+  }
+}

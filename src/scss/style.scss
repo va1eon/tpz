@@ -1,0 +1,36 @@
+@import "~normalize.css";
+@import "helpers.scss";
+@import "var.scss";
+@import "fonts.scss";
+@import "~bootstrap/scss/bootstrap-grid";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+/* modules */
+@import "./modules/header.scss";
+@import "./modules/btn-input.scss";
+@import "./modules/section.scss";
+@import "./modules/programm.scss";
+@import "./modules/marathon-set.scss";
+@import "./modules/progress.scss";
